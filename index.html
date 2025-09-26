@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo_list">
+      <h2>To-Do List</h2>
+
+      <div class="task_creation">
+        <input type="text" name="task_field" id="task_field" placeholder="Enter your task...">
+        <button id="task_create" onclick="addtask()">Add</button>
+      </div>
+
+      <div class="filter_buttons">
+        <button class="filter_btn active" data-filter="all">All</button>
+        <button class="filter_btn" data-filter="pending">Pending</button>
+        <button class="filter_btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="task_list">
+        <!-- <li class="checked">Task Sample 1</li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
